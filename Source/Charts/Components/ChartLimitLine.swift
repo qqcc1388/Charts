@@ -35,6 +35,7 @@ open class ChartLimitLine: ComponentBase
     @objc open var lineDashLengths: [CGFloat]?
     
     @objc open var valueTextColor = NSUIColor.black
+    @objc open var valueTextBackGroundColor = NSUIColor.clear
     @objc open var valueFont = NSUIFont.systemFont(ofSize: 13.0)
     
     @objc open var drawLabelEnabled = true
@@ -72,3 +73,4 @@ open class ChartLimitLine: ComponentBase
         }
     }
 }
+   

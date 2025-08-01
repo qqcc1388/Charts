@@ -23,9 +23,10 @@ open class AxisBase: ComponentBase
     
     /// Custom formatter that is used instead of the auto-formatter if set
     private var _axisValueFormatter: IAxisValueFormatter?
-    
-    @objc open var labelFont = NSUIFont.systemFont(ofSize: 10.0)
     @objc open var labelTextColor = NSUIColor.black
+    @objc open var labelUpTextColor = NSUIColor.black
+    @objc open var labelDownTextColor = NSUIColor.black
+    @objc open var labelFont = NSUIFont.systemFont(ofSize: 10.0)
     
     @objc open var axisLineColor = NSUIColor.gray
     @objc open var axisLineWidth = CGFloat(0.5)
@@ -357,3 +358,4 @@ open class AxisBase: ComponentBase
         axisRange = abs(max - min)
     }
 }
+   
